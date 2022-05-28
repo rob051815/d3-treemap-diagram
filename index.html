@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D3 Treemap Diagram</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Highest Grossing Movies</h1>
+        <h2 id="description">95 Highest Grossing Movies by Revenue</h2>
+        <div id="tooltip"></div>
+        <svg id="canvas"></svg>
+        <svg id='legend'>
+            <g>
+                <rect class="legend-item" x="10" y="0" width="40" height="40" fill="var(--ind-1)"></rect>
+                <text x="60" y="20">Action</text>
+            </g>
+            <g>
+                <rect class="legend-item" x="10" y="40" width="40" height="40" fill="var(--ind-2)"></rect>
+                <text x="60" y="60">Drama</text>
+            </g>
+            <g>
+                <rect class="legend-item" x="10" y="80" width="40" height="40" fill="var(--ind-3)"></rect>
+                <text x="60" y="100">Adventure</text>
+            </g>
+            <g>
+                <rect class="legend-item" x="10" y="120" width="40" height="40" fill="var(--ind-4)"></rect>
+                <text x="60" y="140">Family</text>
+            </g>
+            <g>
+                <rect class="legend-item" x="10" y="160" width="40" height="40" fill="var(--ind-5)"></rect>
+                <text x="60" y="180">Animation</text>
+            </g>
+            <g>
+                <rect class="legend-item" x="10" y="200" width="40" height="40" fill="var(--ind-6)"></rect>
+                <text x="60" y="220">Comedy</text>
+            </g>
+            <g>
+                <rect class="legend-item" x="10" y="240" width="40" height="40" fill="var(--ind-7)"></rect>
+                <text x="60" y="260">Biography</text>
+            </g> 
+        </svg>
+    </div>
+</body>
+<script defer src="./script.js"></script>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>

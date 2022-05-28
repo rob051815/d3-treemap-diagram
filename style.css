@@ -1,0 +1,62 @@
+:root {
+    --bg-main: lightsteelblue;
+    --bg-sec: wheat;
+    --ind-1: khaki;
+    --ind-2: tan;
+    --ind-3: pink;
+    --ind-4: steelblue;
+    --ind-5: crimson;
+    --ind-6: lightgreen;
+    --ind-7: orange;
+    --text-1: black;
+    --text-2: white;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-sec);
+    align-items: center;
+}
+
+#title {
+    margin: 40px auto 4px auto;
+}
+#description {
+    margin-top: 0;
+}
+
+#canvas {
+    min-width: 1000px;
+    min-height: 600px;
+    background-color: var(--bg-main);
+}
+
+svg#legend {
+    min-width: 400px;
+    min-height: 300px;
+}
+
+#tooltip {
+    opacity: 0;
+    box-shadow: 0px 0px 3px 1px black;
+    background-color: var(--bg-sec);
+    color: var(--text-1);
+    position: absolute;
+    pointer-events: none;
+    cursor: pointer;
+    
+}
+ text {
+    pointer-events: none;
+    cursor: pointer;
+}
