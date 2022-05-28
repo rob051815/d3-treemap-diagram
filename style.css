@@ -1,13 +1,13 @@
 :root {
-    --bg-main: lightsteelblue;
-    --bg-sec: wheat;
-    --ind-1: khaki;
-    --ind-2: tan;
-    --ind-3: pink;
-    --ind-4: steelblue;
-    --ind-5: crimson;
-    --ind-6: lightgreen;
-    --ind-7: orange;
+    --bg-main: #ededf4;
+    --bg-sec: #1B1B32;
+    --ind-1: #d11149;
+    --ind-2: #985f99;
+    --ind-3: #50a627;
+    --ind-4: #1a8fe3;
+    --ind-5: #ffb950;
+    --ind-6: #ff850a;
+    --ind-7: #ffd3c0;
     --text-1: black;
     --text-2: white;
 }
@@ -18,14 +18,21 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: var(--bg-sec);
+    font-family: verdana, sans-serif;
+    color: var(--text-2)
+}
+heading {
+    text-align: center;
 }
 .container {
-    width: 100vw;
-    height: 100vh;
     display: flex;
-    flex-direction: column;
+    height: 100vh;
+    flex-direction: row;
+    gap: 60px;
     background-color: var(--bg-sec);
-    align-items: center;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 #title {
@@ -36,27 +43,30 @@ body {
 }
 
 #canvas {
-    min-width: 1000px;
-    min-height: 600px;
+    width: 1000px;
+    height: 600px;
     background-color: var(--bg-main);
 }
 
 svg#legend {
-    min-width: 400px;
-    min-height: 300px;
+    width: 250px;
+    height: 300px;
 }
 
 #tooltip {
     opacity: 0;
     box-shadow: 0px 0px 3px 1px black;
     background-color: var(--bg-sec);
-    color: var(--text-1);
+    color: var(--text-2);
     position: absolute;
     pointer-events: none;
     cursor: pointer;
     
 }
- text {
+ text, tspan {
+    font-size: 9.5px;
     pointer-events: none;
     cursor: pointer;
+    fill: var(--text-2)
 }
+
